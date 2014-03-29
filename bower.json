@@ -6,7 +6,7 @@
     "[iS]"
   ],
   "description": "Stylish is a collection of stylessheets used in [iS] Webapps.",
-  "main": "stylish.scss",
+  "main": "lib/stylish.scss",
   "keywords": [
     "css",
     "sass"
