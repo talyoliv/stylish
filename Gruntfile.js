@@ -6,8 +6,7 @@ module.exports = function(grunt) {
     sass: {
       options: {
         loadPath: [
-          'lib/stylish/*',
-          'app/bower_components/normalize-scss'
+          'lib/stylish/*'
         ],
         banner: '/*\n' +
           '* <%= pkg.name %> - version <%= pkg.version %>\n' +
