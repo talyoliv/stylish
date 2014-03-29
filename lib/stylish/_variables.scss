@@ -1,0 +1,50 @@
+// Font
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$font-size-base:         14px !default;
+$font-size-large:        ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:        ceil($font-size-base * 0.85) !default; // ~12px
+
+$line-height-base:       1.428571429 !default; // 20/14
+$line-height-computed:   floor($font-size-base * $line-height-base) !default; // ~20px
+
+// Grid
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+// Form
+
+// $padding-base-vertical:          6px !default;
+// $padding-base-horizontal:        12px !default;
+
+// $padding-large-vertical:         10px !default;
+// $padding-large-horizontal:       16px !default;
+
+// $padding-small-vertical:         5px !default;
+// $padding-small-horizontal:       10px !default;
+
+// $line-height-large:              1.33 !default;
+// $line-height-small:              1.5 !default;
+
+// $border-radius-base:             4px !default;
+// $border-radius-large:            6px !default;
+// $border-radius-small:            3px !default;
+
+// $caret-width-base:               4px !default;
+// $caret-width-large:              5px !default;
+
+// $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+// $input-height-large:             (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+// $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+// Media Queries
+
+$screen-phone:      480px;
+$screen-tablet:     768px;
+$screen-desktop:    992px;
+$screen-lg-desktop: 1200px;

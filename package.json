@@ -1,0 +1,24 @@
+{
+  "name": "stylish",
+  "version": "0.0.1",
+  "description": "Stylish is a collection of stylessheets used in [iS] Webapps.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/internetsistemas/stylish.git"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "[iS]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/internetsistemas/stylish/issues"
+  },
+  "homepage": "https://github.com/internetsistemas/stylish",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

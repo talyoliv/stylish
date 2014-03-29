@@ -1,0 +1,49 @@
+@mixin alert-variant($background, $border, $text-color) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  hr { border-top-color: darken($border, 5%); }
+  .link { color: darken($text-color, 10%); }
+}
+
+// Show an alert for the users
+//
+// :success - Success style.
+// :info    - Info style.
+// :warning - Warning style.
+// :error   - Danger style.
+.alert {
+  padding: 15px;
+  margin-bottom: $line-height-computed;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  // Headings for larger alerts
+  h4 {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing $headingsColor
+    color: inherit;
+  }
+
+  // Provide class for links that match alerts
+  .link {
+    font-weight: bold;
+  }
+
+  // Improve alignment and spacing of inner content
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+  > p + p {
+    margin-top: 5px;
+  }
+
+  &.success { @include alert-variant(#dff0d8, #d6e9c6, #468847); }
+  &.info { @include alert-variant(#d9edf7, #bce8f1, #3a87ad); }
+  &.warning { @include alert-variant(#fcf8e3, #fbeed5, #c09853); }
+  &.error { @include alert-variant(#f2dede, #eed3d7, #b94a48); }
+
+  &.center { margin: 0 auto; }
+}

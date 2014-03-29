@@ -1,0 +1,38 @@
+// Group elements into groups.
+//
+// :inner - Content block.
+.box-group {
+  position: relative;
+  background: #efefef;
+
+  padding: 3px;
+  margin: 0 0 15px 0;
+
+  &.center {
+    margin: 0 auto;
+  }
+
+  > h3 {
+    background-color: #f5f5f5;
+
+    border: 1px solid #d8d8d8;
+    border-bottom: none;
+
+    font-size: 14px;
+
+    margin: 0;
+    padding: 10px 10px 11px 10px;
+  }
+
+  .inner {
+    font-size: 13px;
+    color: #666;
+
+    background: #fff;
+
+    border: 1px solid #d8d8d8;
+    border-top: 1px solid #ccc;
+
+    padding: 10px;
+  }
+}

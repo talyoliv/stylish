@@ -1,0 +1,26 @@
+{
+  "name": "stylish",
+  "version": "0.0.1",
+  "homepage": "https://github.com/internetsistemas/stylish",
+  "authors": [
+    "[iS]"
+  ],
+  "description": "Stylish is a collection of stylessheets used in [iS] Webapps.",
+  "main": "stylish.css",
+  "keywords": [
+    "css",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "~3.0.1"
+  }
+}
