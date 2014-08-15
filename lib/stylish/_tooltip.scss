@@ -1,0 +1,32 @@
+div.tooltip {
+  background: #FFFFFF;
+  border: 1px solid darken(#F4F4F4, 5%);
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2),
+0 25px 50px 0 rgba(0, 0, 0, 0.15);
+
+  &.tooltip:after, .tooltip:before {
+    top: 100%;
+    left: 30%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &.tooltip:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #FFFFFF;
+    border-width: 20px;
+    margin-left: -20px;
+  }
+
+  &.tooltip:before {
+    border-color: rgba(245, 245, 245, 0);
+    border-top-color: #f5f5f5;
+    border-width: 26px;
+    margin-left: -26px;
+  }
+}
